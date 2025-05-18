@@ -8,6 +8,7 @@
 	$ip = ip_in_ranges($_SERVER['REMOTE_ADDR'], $rango);
 ?>
 <!DOCTYPE html>
+<<<<<<< HEAD
 <html lang="es-SV">
 	<head>
 		<title>Inicio de sesión</title>
@@ -97,4 +98,48 @@
 	}
 ?>
 	</body>
+=======
+<html lang="en">
+<head>
+    <title>INICIO DE SESION: Marlon Javier Amaya Pineda</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href='css/bootstrap.css' />
+    <link href="fonts/fontawesome/css/all.css" rel="stylesheet" />
+    <script type="text/javascript" src="js/jquery-3.7.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/sweetalert.all.js"></script>
+    <script type="text/javascript" src="fonts/fontawesome"></script>
+</head>
+<body>
+
+    <div class="alert alert-warning" roles="alert">
+        <b></b>
+    </div>
+    
+
+    <div class="from-row">
+        <div class="form-group col-md-5 text-center">
+            <img src="media/logo/logo_corporativo.png" class="mx-auto d-block" id="img" width="65%" height="auto" />
+        </div>
+        <div class="form-group col-md-5 ml-4 mr-4 justify-content-center align-self-center">
+            <h1>Diseñando Estrategias para la Recuperacion y Migracion de Bases de Datos (RBK0)</h1>
+            <from name="frm_iniciar_sesion" id="frm_iniciar_sesion" action="core/process.php" method="post">
+                <div class="form-group">
+                    <label form="txt_user">Usuario:</label>
+                    <input type="text" class="form-control" id="txt_user" name="txt_user" aria-describedby="txt_userHelp" maxlength="10" require>
+                    <small id="txt_userHelp" class="form-text text-muted">Digite un usuario(Campo Obligatorio).</small>
+                </div>
+                <div class="form-group">
+                    <label form="txt_pass">Contraseña:</label>
+                    <input type="password" class="form-control" id="txt_pass" name="txt_pass" aria-describedby="txt_passHelp" maxlength="10" require>
+                    <small id="txt_passHelp" class="form-text text-muted">La contraseña es obligatoria.</small>
+                </div>
+                <button type="submit" id="btn_ingresar" class="btn btn-primary mx-auto d-block" value="ingresar">Iniciar Sesion</button>
+            </from>
+        </div>
+    </div>
+
+</body>
+>>>>>>> fdfbf2d (Finalización de actividad de LOGS)
 </html>
